@@ -1,0 +1,4 @@
+﻿Lab 1 task 2.obj : error LNK2005: "double __cdecl power(double,int)" (?power@@YANNH@Z) уже определен в Lab 1 task 1.obj
+Lab 1 task 2.obj : error LNK2005: main уже определен в Lab 1 task 1.obj
+Lab 1 task 3.obj : error LNK2005: main уже определен в Lab 1 task 1.obj
+C:\Users\Eliza\Desktop\KSTU_3\Spring\Object Oriented Programming\Lab 1\x64\Debug\Lab 1.exe : fatal error LNK1169: обнаружен многократно определенный символ - один или более
