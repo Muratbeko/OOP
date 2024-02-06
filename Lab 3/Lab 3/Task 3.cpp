@@ -14,7 +14,7 @@ private:
     chrono::system_clock::time_point licenseDate;
 
 public:
-    // Исправленный конструктор с правильным порядком инициализации
+    
     Soft(string prog, string dev, double size, string date, chrono::system_clock::time_point license)
         : program(prog), developer(dev), size(size), date(date), licenseDate(license) {}
 

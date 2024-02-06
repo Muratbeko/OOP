@@ -1,6 +1,8 @@
 ﻿#include <iostream>
 #include <string>
 #include <ctime>
+#include <chrono>
+#include <thread>
 
 using namespace std;
 
@@ -9,30 +11,29 @@ private:
     int seconds;
 
 public:
-    Timer() : seconds(0) {}  
+    Timer() : seconds(0) {}
     Timer(int sec) : seconds(sec) {}
     Timer(int min, int sec) : seconds(min * 60 + sec) {}
 
     void run() {
-        clock_t start = clock();
-        double duration;
+        time_t startTime = time(NULL);
+
         cout << "Таймер запущен" << endl;
 
-        do {
-            clock_t time = clock();
-            duration = (time - start) / static_cast<double>(CLOCKS_PER_SEC);
-        } while (duration < seconds);
-
+        while (time(NULL) - startTime < seconds) {
+            int remainingTime = seconds - (time(NULL) - startTime);
+            cout << "Оставшееся время: " << remainingTime << " секунд" << endl;
+            this_thread::sleep_for(chrono::seconds(1));
+        }
     }
 
     ~Timer() {
-        cout << "Таймер stop" << endl;
+        cout << "Таймер завершен" << endl;
     }
 };
 
 int main() {
     Timer timer;
-    cout << "Выберите формат ввода времени:\n";
     cout << "1. В секундах\n";
     cout << "2. В минутах и секундах\n";
     int choice;
@@ -54,7 +55,7 @@ int main() {
         break;
     }
     default:
-        cout << "Error" << endl;
+        cout << "Ошибка" << endl;
         return 1;
     }
 

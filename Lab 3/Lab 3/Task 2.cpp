@@ -7,11 +7,11 @@ class Nomenclature {
 private:
     string Product;
     short int Price;
-    float RozNas;
+    double RozNas;
     int Quantity;
 
 public:
-    Nomenclature(string product, short int price, float roznas, int quantity)
+    Nomenclature(string product, short int price, double roznas, int quantity)
         : Product(product), Price(price), RozNas(roznas), Quantity(quantity) {}
 
     ~Nomenclature() {
@@ -34,11 +34,11 @@ public:
 int main() {
     string product;
     short int price;
-    float roznas;
+    double roznas;
     int quantity;
 
-    cout << "Введите название товара: ";
-    cin >> product;
+    cout << "Введите название товара с пробелами: ";
+    getline(cin, product);
 
     cout << "Введите оптовую цену: ";
     cin >> price;
@@ -49,9 +49,14 @@ int main() {
     cout << "Введите количество товаров: ";
     cin >> quantity;
 
-    Nomenclature product(product, price, roznas, quantity);
+    if (price <= 0 || roznas <= 0 || quantity <= 0) {
+        cout << "Все значения должны быть больше нуля" << endl;
+        return 1;
+    }
 
-    product.display();
+    Nomenclature productObj(product, price, roznas, quantity);
+
+    productObj.display();
 
     return 0;
 }
