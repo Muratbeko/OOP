@@ -1,0 +1,7 @@
+﻿  task 1.cpp
+  task 2.cpp
+  task 3.cpp
+  Создание кода...
+task 2.obj : error LNK2005: main уже определен в task 1.obj
+task 3.obj : error LNK2005: main уже определен в task 1.obj
+C:\Users\Eliza\Desktop\KSTU_3\Spring\Object Oriented Programming\Lab 5\lab5\x64\Debug\lab5.exe : fatal error LNK1169: обнаружен многократно определенный символ - один или более
