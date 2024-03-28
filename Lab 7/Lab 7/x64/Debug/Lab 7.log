@@ -1,0 +1,16 @@
+﻿  Source.cpp
+  Task2.cpp
+C:\Users\Eliza\Desktop\KSTU_3\Spring\Object Oriented Programming\Lab 7\Lab 7\Task2.cpp(116,1): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Eliza\Desktop\KSTU_3\Spring\Object Oriented Programming\Lab 7\Lab 7\Task2.cpp(115,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "bi"
+  Task1.cpp
+  Task3.cpp
+C:\Users\Eliza\Desktop\KSTU_3\Spring\Object Oriented Programming\Lab 7\Lab 7\Task3.cpp(25,1): error C2059: синтаксическая ошибка: константа
+C:\Users\Eliza\Desktop\KSTU_3\Spring\Object Oriented Programming\Lab 7\Lab 7\Task3.cpp(27,14): error C2059: синтаксическая ошибка: public
+C:\Users\Eliza\Desktop\KSTU_3\Spring\Object Oriented Programming\Lab 7\Lab 7\Task3.cpp(27,30): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Eliza\Desktop\KSTU_3\Spring\Object Oriented Programming\Lab 7\Lab 7\Task3.cpp(27,30): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Eliza\Desktop\KSTU_3\Spring\Object Oriented Programming\Lab 7\Lab 7\Task3.cpp(54,5): error C2065: Euro: необъявленный идентификатор
+C:\Users\Eliza\Desktop\KSTU_3\Spring\Object Oriented Programming\Lab 7\Lab 7\Task3.cpp(54,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "euro"
+C:\Users\Eliza\Desktop\KSTU_3\Spring\Object Oriented Programming\Lab 7\Lab 7\Task3.cpp(54,10): error C2065: euro: необъявленный идентификатор
+C:\Users\Eliza\Desktop\KSTU_3\Spring\Object Oriented Programming\Lab 7\Lab 7\Task3.cpp(56,5): error C2065: euro: необъявленный идентификатор
+C:\Users\Eliza\Desktop\KSTU_3\Spring\Object Oriented Programming\Lab 7\Lab 7\Task3.cpp(59,37): error C2065: euro: необъявленный идентификатор
+  Создание кода...
